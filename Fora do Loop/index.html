@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fora do Loop - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <h1>Fora do Loop</h1>
+          <p>
+            O podcast para estudantes de tecnologia que querem sair do loop
+            infinito.
+          </p>
+          <div class="hero__buttons">
+            <a href="#" class="btn btn-accent">Ouvir Último Episódio</a>
+            <a href="episodios.html" class="btn btn-outline"
+              >Ver Todos os Episódios</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-up">Episódio da Semana</h2>
+          <div class="card-featured" data-aos="fade-up">
+            <div
+              class="card-featured__player"
+              style="background-image: url('assets/images/cover-ep-42.png')"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="72"
+                height="72"
+                viewBox="0 0 24 24"
+                fill="rgba(255,255,255,0.5)"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polygon points="10 8 16 12 10 16 10 8" />
+              </svg>
+            </div>
+            <div class="card-featured__content">
+              <span class="card-featured__date">1 de Outubro, 2025</span>
+              <h3>Como sair da síndrome do impostor na Tech</h3>
+              <p class="text-muted-2">
+                Neste episódio, conversamos com desenvolvedores experientes
+                sobre como lidar com a síndrome do impostor, compartilhando
+                estratégias práticas e histórias inspiradoras.
+              </p>
+              <div class="tags">
+                <span class="tag">Carreira</span>
+                <span class="tag">Saúde Mental</span>
+              </div>
+              <a href="#" class="btn btn-primary">Ouvir Agora</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-up">
+            Nossos Patrocinadores
+          </h2>
+          <div class="grid grid-3">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+              <div class="card__icon-placeholder">
+                <img
+                  src="assets/images/tech.png"
+                  alt="Logo da Tech Academy"
+                  style="border-radius: 10px"
+                />
+              </div>
+              <h4>Tech Academy</h4>
+              <p class="text-muted">Plataforma de cursos para devs.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+              <div class="card__icon-placeholder">
+                <img
+                  src="assets/images/dev.png"
+                  alt="Logo da DevTools Pro"
+                  style="border-radius: 10px"
+                />
+              </div>
+              <h4>DevTools Pro</h4>
+              <p class="text-muted">Ferramentas para desenvolvedores.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+              <div class="card__icon-placeholder">
+                <img
+                  src="assets/images/code.png"
+                  alt="Logo da Code Coffee"
+                  style="border-radius: 10px"
+                />
+              </div>
+              <h4>Code Coffee</h4>
+              <p class="text-muted">Café especial para programadores.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-up">
+            Siga nas Redes Sociais
+          </h2>
+          <div class="grid grid-2">
+            <div class="card-social" data-aos="fade-right">
+              <h4>Instagram</h4>
+              <p class="text-muted-2">Dicas rápidas e bastidores.</p>
+              <a href="#" class="btn btn-outline-full">Seguir @foradoloop</a>
+            </div>
+            <div class="card-social" data-aos="fade-left">
+              <h4>YouTube</h4>
+              <p class="text-muted-2">
+                Episódios em vídeo e conteúdo exclusivo.
+              </p>
+              <a href="#" class="btn btn-outline-full">Inscrever-se</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container cta__container">
+          <h2 data-aos="fade-up">Não Perca Nenhum Episódio</h2>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Inscreva-se na nossa newsletter e receba notificações de novos
+            episódios e conteúdos exclusivos!
+          </p>
+          <form class="cta__form" data-aos="fade-up" data-aos-delay="200">
+            <input type="email" placeholder="Seu melhor e-mail" required />
+            <button type="submit" class="btn btn-accent">Inscrever</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fora do Loop - Episódios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <h1>Todos os Episódios</h1>
+          <p>
+            Explore nossa coleção completa de conversas sobre tecnologia,
+            carreira e desenvolvimento.
+          </p>
+        </div>
+      </section>
+
+      <section class="search-bar">
+        <div class="container">
+          <input
+            type="search"
+            placeholder="Buscar episódios por título, tema ou convidado..."
+          />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="episodes-list">
+            <div class="episode-card" data-aos="fade-up">
+              <div class="episode-card__number">
+                <p>EP</p>
+                <span>#42</span>
+              </div>
+              <div class="episode-card__content">
+                <h3>Como Sair da Síndrome do Impostor na Tech</h3>
+                <div class="episode-card__meta">
+                  <span>1 de Outubro, 2025</span> • <span>45 min</span>
+                </div>
+                <p class="text-muted-2">
+                  Conversamos com desenvolvedores experientes sobre como lidar
+                  com a síndrome do impostor.
+                </p>
+                <div class="tags">
+                  <span class="tag">Carreira</span>
+                  <span class="tag">Saúde Mental</span>
+                </div>
+              </div>
+              <div class="episode-card__action">
+                <a href="#" class="btn btn-primary">Ouvir</a>
+              </div>
+            </div>
+            <div class="episode-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="episode-card__number">
+                <p>EP</p>
+                <span>#41</span>
+              </div>
+              <div class="episode-card__content">
+                <h3>O Futuro do JavaScript em 2025</h3>
+                <div class="episode-card__meta">
+                  <span>24 de Setembro, 2025</span> • <span>52 min</span>
+                </div>
+                <p class="text-muted-2">
+                  Exploramos as novidades e tendências do JavaScript para este
+                  ano.
+                </p>
+                <div class="tags">
+                  <span class="tag">Desenvolvimento</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <div class="episode-card__action">
+                <a href="#" class="btn btn-primary">Ouvir</a>
+              </div>
+            </div>
+            <div class="episode-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="episode-card__number">
+                <p>EP</p>
+                <span>#40</span>
+              </div>
+              <div class="episode-card__content">
+                <h3>Mulheres na Tech: Desafios e Conquistas</h3>
+                <div class="episode-card__meta">
+                  <span>17 de Setembro, 2025</span> • <span>48 min</span>
+                </div>
+                <p class="text-muted-2">
+                  Entrevista especial com desenvolvedoras que estão
+                  transformando o mercado.
+                </p>
+                <div class="tags">
+                  <span class="tag">Diversidade</span>
+                  <span class="tag">Carreira</span>
+                </div>
+              </div>
+              <div class="episode-card__action">
+                <a href="#" class="btn btn-primary">Ouvir</a>
+              </div>
+            </div>
+          </div>
+          <div class="section-cta">
+            <button class="btn btn-outline-full" data-aos="zoom-in">
+              Carregar Mais Episódios
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

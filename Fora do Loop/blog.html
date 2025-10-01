@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fora do Loop - Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Nosso Blog</h1>
+          <p>
+            Conteúdos aprofundados sobre tecnologia, carreira e desenvolvimento
+            pessoal.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2
+            class="section__title"
+            style="text-align: left; font-size: 2rem"
+            data-aos="fade-right"
+          >
+            Artigos Recentes
+          </h2>
+          <div class="grid grid-3">
+            <div class="post-card" data-aos="fade-up" data-aos-delay="100">
+              <img
+                src="assets/images/dicas.png"
+                alt="Notebook com código e um café ao lado"
+                class="post-card__image"
+              />
+              <div class="post-card__content">
+                <h4>10 Dicas Para Começar Sua Carreira em Tech</h4>
+                <p class="text-muted-2">
+                  Descubra as estratégias essenciais para dar os primeiros
+                  passos no mercado de tecnologia...
+                </p>
+                <a href="#" class="post-card__link">Ler Artigo &rarr;</a>
+              </div>
+            </div>
+            <div class="post-card" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="assets/images/git.png"
+                alt="Logo do Git e do GitHub lado a lado"
+                class="post-card__image"
+              />
+              <div class="post-card__content">
+                <h4>Git e GitHub: Guia Completo Para Iniciantes</h4>
+                <p class="text-muted-2">
+                  Aprenda os fundamentos de controle de versão e como colaborar
+                  em projetos open source.
+                </p>
+                <a href="#" class="post-card__link">Ler Artigo &rarr;</a>
+              </div>
+            </div>
+            <div class="post-card" data-aos="fade-up" data-aos-delay="300">
+              <img
+                src="assets/images/estudos-programacao.png"
+                alt="Uma mesa organizada com livros de programação e um monitor"
+                class="post-card__image"
+              />
+              <div class="post-card__content">
+                <h4>Como Organizar Seus Estudos em Programação</h4>
+                <p class="text-muted-2">
+                  Métodos comprovados para criar uma rotina de estudos eficaz e
+                  manter a consistência.
+                </p>
+                <a href="#" class="post-card__link">Ler Artigo &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <div class="section-cta">
+            <button class="btn btn-outline-full" data-aos="zoom-in">
+              Ver Todos os Artigos
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
