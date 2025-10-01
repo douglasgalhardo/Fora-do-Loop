@@ -56,7 +56,7 @@ O projeto está organizado da seguinte forma:
 
 Por ser um projeto web estático, você não precisa de um ambiente de desenvolvimento complexo para executá-lo.
 
-1.  Clone este repositório: `git clone https://seu-link-do-repositorio.git`
+1.  Clone este repositório: `git clone https://github.com/douglasgalhardo/Fora-do-Loop.git`
 2.  Navegue até a pasta do projeto.
 3.  Abra o arquivo `index.html` diretamente no seu navegador.
 
