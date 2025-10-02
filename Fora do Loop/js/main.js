@@ -1,19 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // --- FUNÇÃO PARA CARREGAR COMPONENTES ---
+  // Carregar componentes
   const loadComponent = (url, elementId) => {
     fetch(url)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Erro ao carregar ${url}: ${response.statusText}`);
-        }
-        return response.text();
-      })
+      .then((response) => response.text())
       .then((data) => {
         document.getElementById(elementId).innerHTML = data;
 
         if (elementId === "header-placeholder") {
           handleActiveNavLinks();
-          handleMobileMenu();
         }
       })
       .catch((error) =>
@@ -21,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
   };
 
-  // --- LÓGICA PARA ATIVAR O LINK DE NAVEGAÇÃO CORRETO ---
+  // Link de navegação
   const handleActiveNavLinks = () => {
     const navLinks = document.querySelectorAll(".nav__link");
     const currentPath = window.location.pathname.split("/").pop();
@@ -38,26 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
 
-  // --- LÓGICA DO MENU MOBILE ---
-  const handleMobileMenu = () => {
-    const navMenu = document.getElementById("nav-menu");
-    const navToggle = document.getElementById("nav-toggle");
-
-    if (navToggle) {
-      navToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("show-menu");
-      });
-    }
-
-    const navLinks = document.querySelectorAll(".nav__link");
-    navLinks.forEach((n) =>
-      n.addEventListener("click", () => {
-        navMenu.classList.remove("show-menu");
-      })
-    );
-  };
-
-  // --- CARREGA O CABEÇALHO E O RODAPÉ ---
+  //Cabeçalho e Rodapé
   loadComponent("_header.html", "header-placeholder");
   loadComponent("_footer.html", "footer-placeholder");
 });

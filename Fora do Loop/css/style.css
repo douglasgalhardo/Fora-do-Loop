@@ -1,6 +1,4 @@
-/* --- FONTES --- */
-
-/* --- VARIÁVEIS DE COR E ESTILO --- */
+/*COR E ESTILO*/
 :root {
   --primary-color: #6c5ce7; /* Roxo */
   --secondary-color: #00b894; /* Teal */
@@ -20,7 +18,7 @@
   --font-body: "Inter", sans-serif;
 }
 
-/* --- RESET BÁSICO --- */
+/*RESET*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -61,7 +59,7 @@ img {
   height: auto;
 }
 
-/* --- COMPONENTES REUTILIZÁVEIS --- */
+/*COMPONENTES*/
 .container {
   max-width: 1120px;
   margin-left: auto;
@@ -151,7 +149,7 @@ img {
   color: var(--text-color-light);
 }
 
-/* --- NAVEGAÇÃO --- */
+/*NAVEGAÇÃO*/
 .header {
   position: sticky;
   top: 0;
@@ -207,14 +205,7 @@ img {
   color: var(--primary-color);
 }
 
-.nav__toggle {
-  display: none;
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-/* --- SEÇÃO HERO --- */
+/*SEÇÃO HERO */
 .hero {
   background: linear-gradient(
     135deg,
@@ -245,7 +236,7 @@ img {
   gap: 1rem;
 }
 
-/* --- CARDS --- */
+/*CARDS*/
 .card-featured {
   display: flex;
   background: var(--bg-color);
@@ -360,7 +351,7 @@ img {
   margin-bottom: 1.5rem;
 }
 
-/* --- NEWSLETTER CTA --- */
+/*NEWSLETTER*/
 .cta {
   background: linear-gradient(
     135deg,
@@ -448,59 +439,6 @@ img {
   text-align: center;
   color: var(--text-muted-2);
 }
-
-/* --- RESPONSIVIDADE --- */
-@media screen and (max-width: 768px) {
-  .nav__menu {
-    position: fixed;
-    top: var(--header-height);
-    right: -100%;
-    width: 100%;
-    height: calc(100vh - var(--header-height));
-    background-color: var(--bg-color);
-    transition: right 0.4s;
-    padding: 2rem;
-  }
-
-  .nav__menu.show-menu {
-    right: 0;
-  }
-
-  .nav__list {
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .nav__toggle {
-    display: block;
-  }
-
-  .grid-2,
-  .grid-3,
-  .footer__container {
-    grid-template-columns: 1fr;
-  }
-
-  .card-featured {
-    flex-direction: column;
-  }
-  .card-featured__player {
-    flex-basis: 150px;
-  }
-
-  .cta__form {
-    flex-direction: column;
-  }
-
-  .section__title {
-    font-size: 2rem;
-  }
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-}
-/* --- ESTILOS ADICIONAIS PARA AS NOVAS PÁGINAS --- */
 
 /* Barra de Busca */
 .search-bar {
@@ -646,35 +584,10 @@ img {
   margin: 2rem 0;
 }
 .btn-secondary {
-  /* Botão novo para página de contato */
+  /*Botão página de contato*/
   background-color: var(--secondary-color);
   color: var(--text-color-light);
 }
 .btn-secondary:hover {
   background-color: #00a382;
-}
-
-/* Ajustes de Responsividade para novos componentes */
-@media screen and (max-width: 768px) {
-  .episode-card {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-  }
-  .episode-card__number {
-    text-align: left;
-    margin-bottom: 1rem;
-  }
-  .episode-card__action {
-    margin-left: 0;
-    margin-top: 1rem;
-    width: 100%;
-  }
-  .episode-card__action .btn {
-    width: 100%;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
 }
